@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <table border="2" cellspacing="3" align="center">
+        <tr>
+            <td align="center">
+                <td>9:45-10:30
+                    <td>11:15-12:00
+                        <td>2:00-2:45
+                            <td>3:15-4:00
+        </tr>
+        <tr>
+            <td align="center">{% if day == "mon" %}
+                <font color="red"> {% endif %}MONDAY {%for i in mon %}
+
+                    <td align="center">
+                        <font color="red"><a href={{i.link.link}}>{{i.class_co}}</a><br> {% endfor %}
+        </tr>
+        <tr>
+            <td align="center">{% if day == "tue"%}
+                <font color="red"> {% endif %}TUESDAY {%for i in tue %}
+                    <td align="center">
+                        <font color="red"><a href={{i.link.link}}>{{i.class_co}}</a><br> {% endfor %}
+        </tr>
+        <tr>
+            <td align="center">{% if day == "wed"%}
+                <font color="red"> {% endif %}WEDNESDAY {%for i in wed %}
+                    <td align="center">
+                        <font color="red"><a href={{i.link.link}}>{{i.class_co}}</a><br> {% endfor %}
+        </tr>
+        <tr>
+            <td align="center">{% if day == "thu"%}
+                <font color="red"> {% endif %}THURSDAY {%for i in the %}
+                    <td align="center">
+                        <font color="red"><a href={{i.link.link}}>{{i.class_co}}</a><br> {% endfor %}
+        </tr>
+        <tr>
+            <td align="center">{% if day == "fri"%}
+                <font color="red"> {% endif %}FRIDAY {%for i in fri %}
+                    <td align="center">
+                        <font color="red"><a href={{i.link.link}}>{{i.class_co}}</a><br> {% endfor %}
+        </tr>
+
+</body>
+
+</html>
